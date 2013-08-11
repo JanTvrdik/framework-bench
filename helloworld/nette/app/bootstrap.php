@@ -15,8 +15,9 @@ if (is_file($cache = __DIR__ . '/../temp/classes.cache.php')) {
 
 $configurator = new Configurator();
 $configurator->setDebugMode(FALSE);
-$configurator->enableDebugger(__DIR__ . '/../log');
+// $configurator->enableDebugger(__DIR__ . '/../log');
 $configurator->setTempDirectory(__DIR__ . '/../temp');
+$configurator->addConfig(__DIR__ . '/config.neon', FALSE);
 
 $container = $configurator->createContainer();
 
