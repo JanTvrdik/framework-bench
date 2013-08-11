@@ -20,6 +20,6 @@ $configurator->addConfig(__DIR__ . '/config.neon', FALSE);
 
 $container = $configurator->createContainer();
 
-$container->router[] = new SimpleRouter('Default:default');
+$container->router[] = new SimpleRouter('Micro:default');
 
 $container->application->run();
