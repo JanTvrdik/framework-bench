@@ -1,4 +1,6 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
+
 use Nette\Configurator;
 use Nette\Application\Routers\Route;
 
